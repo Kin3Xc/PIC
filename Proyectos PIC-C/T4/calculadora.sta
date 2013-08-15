@@ -1,0 +1,63 @@
+
+ROM used: 1115 (14%)
+          1115 (14%) including unused fragments
+
+          1 Average locations per line
+          2 Average locations per statement
+
+RAM used: 37 (10%) at main() level
+          49 (13%) worst case
+
+Stack used: 2 worst case (out of 8 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   41    16   3  calculadora.c
+  312     0   0  ..\..\..\..\..\Program Files\PICC\devices\16f877a.h
+  899   380  73  ..\..\..\..\..\Program Files\PICC\drivers\stdlib.h
+   28     0   0  ..\..\..\..\..\Program Files\PICC\drivers\stddef.h
+  417   126  24  ..\..\..\..\..\Program Files\PICC\drivers\string.h
+   28     0   0  ..\..\..\..\..\Program Files\PICC\drivers\ctype.h
+----- -----
+ 1725   522 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     64   6   6             @DIVS1616
+0     21   2   5             @MUL1616
+0    264  24  11  1817 10.4  atol
+0     34   3   1             @PUTCHAR_1_
+0     37   3   1             @GETCH_1_
+0    253  23  25   760  5.7  MAIN
+0     43   4   0             @const340
+0     30   3   0             @const341
+0    128  11   9             @PRINTF_LD_324
+0     44   4   0             @const344
+0     31   3   0             @const345
+0     36   3   0             @const346
+0     37   3   0             @const347
+0     49   4   0             @const348
+0     40   4   0             @const349
+
+Program metrics:
+    Functions               2
+    Statements              522
+    Comments                832
+    Volume (V)              2960
+    Difficilty (D)          15.0
+    Effort to implement (E) 44381
+    Time to implement (T)   41 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   9
+    Maintainability (MI)    51
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF  1111  933  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

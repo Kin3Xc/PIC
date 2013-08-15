@@ -1,0 +1,108 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004     @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015-016 CCP_1
+016     CCP_1_HIGH
+01B-01C CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-025 _Randseed
+026-02B MAIN.caracter1
+02C-031 MAIN.caracter2
+032-033 MAIN.x
+034-035 MAIN.Y
+036-037 MAIN.suma
+038-039 MAIN.resta
+03A-03B MAIN.multiplicacion
+03C-03D MAIN.division
+03E-03F @DIVS1616.P1
+03E-03F atol.s
+03E     @GETCH_1_.@SCRATCH
+03E     MAIN.@SCRATCH
+03F-040 @PRINTF_LD_324.P1
+040-041 @DIVS1616.P1
+040-041 atol.result
+041     @PRINTF_LD_324.@SCRATCH
+042     atol.sign
+042     @DIVS1616.@SCRATCH
+042     @PRINTF_LD_324.@SCRATCH
+043     atol.base
+043     @DIVS1616.@SCRATCH
+043     @PRINTF_LD_324.@SCRATCH
+044     atol.index
+044     @PRINTF_LD_324.@SCRATCH
+045     atol.c
+045     @PRINTF_LD_324.@SCRATCH
+046-047 @MUL1616.P1
+046     atol.@SCRATCH
+046     @PRINTF_LD_324.@SCRATCH
+047     atol.@SCRATCH
+047     @PRINTF_LD_324.@SCRATCH
+048     @PUTCHAR_1_.P1
+048-049 @MUL1616.P2
+048     atol.@SCRATCH
+04A     @MUL1616.@SCRATCH
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+031E  @DIVS1616
+0181  @MUL1616
+0196  atol
+013A  @PUTCHAR_1_
+015C  @GETCH_1_
+035E  MAIN
+0004  @const340
+002F  @const341
+029E  @PRINTF_LD_324
+004D  @const344
+0079  @const345
+0098  @const346
+00BC  @const347
+00E1  @const348
+0112  @const349
+035E  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    C:\Users\Administrador\Desktop\Proyectos PIC-C\T4\
+
+Project Files:
+    calculadora.c
+    ..\..\..\..\..\Program Files\PICC\devices\16f877a.h
+    ..\..\..\..\..\Program Files\PICC\drivers\stdlib.h
+    ..\..\..\..\..\Program Files\PICC\drivers\stddef.h
+    ..\..\..\..\..\Program Files\PICC\drivers\string.h
+    ..\..\..\..\..\Program Files\PICC\drivers\ctype.h
+
+Units:
+    C:\Users\Administrador\Desktop\Proyectos PIC-C\T4\calculadora.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      calculadora.err
+    Ext Symbols: calculadora.esym
+    INHX8:       calculadora.hex
+    Symbols:     calculadora.sym
+    List:        calculadora.lst
+    Debug/COFF:  calculadora.cof
+    Project:     calculadora.PJT
+    Call Tree:   calculadora.tre
+    Statistics:  calculadora.sta

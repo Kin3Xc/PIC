@@ -1,0 +1,149 @@
+CCS PCM C Compiler, Version 4.049, 34317               06-ago-13 10:21
+
+               Filename: C:\Users\Administrador\Desktop\Proyectos PIC-C\T3\printf.lst
+
+               ROM used: 191 words (2%)
+                         Largest free fragment is 2048
+               RAM used: 8 (2%) at main() level
+                         9 (2%) worst case
+               Stack:    1 locations
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   08D
+0003:  NOP
+.................... #include <16f877a.h> 
+.................... //////// Standard Header file for the PIC16F877A device //////////////// 
+.................... #device PIC16F877A 
+.................... #list 
+....................  
+.................... #use delay (clock = 4M) 
+*
+0076:  MOVLW  22
+0077:  MOVWF  04
+0078:  BCF    03.7
+0079:  MOVF   00,W
+007A:  BTFSC  03.2
+007B:  GOTO   08A
+007C:  MOVLW  01
+007D:  MOVWF  78
+007E:  CLRF   77
+007F:  DECFSZ 77,F
+0080:  GOTO   07F
+0081:  DECFSZ 78,F
+0082:  GOTO   07E
+0083:  MOVLW  4A
+0084:  MOVWF  77
+0085:  DECFSZ 77,F
+0086:  GOTO   085
+0087:  GOTO   088
+0088:  DECFSZ 00,F
+0089:  GOTO   07C
+008A:  BCF    0A.3
+008B:  BCF    0A.4
+008C:  GOTO   0B1 (RETURN)
+.................... #use RS232 (baud = 9600, bits = 8, parity = N, xmit = pin_c0, rcv = pin_c2) 
+*
+0052:  BCF    20.0
+0053:  MOVF   20,W
+0054:  BSF    03.5
+0055:  MOVWF  07
+0056:  BCF    03.5
+0057:  BCF    07.0
+0058:  MOVLW  08
+0059:  MOVWF  78
+005A:  GOTO   05B
+005B:  NOP
+005C:  BSF    78.7
+005D:  GOTO   06C
+005E:  BCF    78.7
+005F:  RRF    22,F
+0060:  BTFSC  03.0
+0061:  BSF    07.0
+0062:  BTFSS  03.0
+0063:  BCF    07.0
+0064:  BSF    78.6
+0065:  GOTO   06C
+0066:  BCF    78.6
+0067:  DECFSZ 78,F
+0068:  GOTO   05F
+0069:  GOTO   06A
+006A:  NOP
+006B:  BSF    07.0
+006C:  MOVLW  1C
+006D:  MOVWF  04
+006E:  DECFSZ 04,F
+006F:  GOTO   06E
+0070:  GOTO   071
+0071:  BTFSC  78.7
+0072:  GOTO   05E
+0073:  BTFSC  78.6
+0074:  GOTO   066
+0075:  RETLW  00
+*
+009E:  MOVLW  FF
+009F:  BCF    03.5
+00A0:  MOVWF  20
+....................  
+.................... void main () { 
+*
+008D:  CLRF   04
+008E:  BCF    03.7
+008F:  MOVLW  1F
+0090:  ANDWF  03,F
+0091:  BCF    20.0
+0092:  MOVF   20,W
+0093:  BSF    03.5
+0094:  MOVWF  07
+0095:  BCF    03.5
+0096:  BSF    07.0
+0097:  BSF    03.5
+0098:  BSF    1F.0
+0099:  BSF    1F.1
+009A:  BSF    1F.2
+009B:  BCF    1F.3
+009C:  MOVLW  07
+009D:  MOVWF  1C
+....................  
+....................    printf (" Hola mundo \r"); 
+*
+00A1:  CLRF   21
+00A2:  MOVF   21,W
+00A3:  CALL   004
+00A4:  INCF   21,F
+00A5:  MOVWF  77
+00A6:  MOVWF  22
+00A7:  CALL   052
+00A8:  MOVLW  0D
+00A9:  SUBWF  21,W
+00AA:  BTFSS  03.2
+00AB:  GOTO   0A2
+....................    delay_ms(2000); 
+00AC:  MOVLW  08
+00AD:  MOVWF  21
+00AE:  MOVLW  FA
+00AF:  MOVWF  22
+00B0:  GOTO   076
+00B1:  DECFSZ 21,F
+00B2:  GOTO   0AE
+....................    printf ("Este es mi primer programa desde la virtual terminal XD"); 
+00B3:  CLRF   21
+00B4:  MOVF   21,W
+00B5:  CALL   016
+00B6:  INCF   21,F
+00B7:  MOVWF  77
+00B8:  MOVWF  22
+00B9:  CALL   052
+00BA:  MOVLW  37
+00BB:  SUBWF  21,W
+00BC:  BTFSS  03.2
+00BD:  GOTO   0B4
+....................  
+.................... } 
+....................  
+....................  
+00BE:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F73   RC NOWDT PUT NODEBUG NOPROTECT BROWNOUT NOLVP NOCPD NOWRT
